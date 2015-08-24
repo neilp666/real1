@@ -1,0 +1,12 @@
+<h2 class="white text-center">Forgot your password?</h2>
+
+<%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post, class: 'form-signin' }) do |f| %>
+  <%= f.error_notification %>
+
+    <%= f.input :email, required: true, autofocus: true, input_html: {class: "form-control"}, placeholder: "Email", label: false %>
+
+    <%= f.button :submit, "Reset password", class: "btn btn-primary btn-block" %>
+  
+ <%= render "devise/shared/links" %>
+
+<% end %>

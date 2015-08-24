@@ -1,0 +1,75 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ */
+@import url(//fonts.googleapis.com/css?family=Pacifico);
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+
+
+body {
+
+  }
+
+
+
+.jumbotron {
+
+  text-align: center;
+  
+  background-color: white;
+  height: 350px;
+
+  h1 {
+  padding-top: 20px;
+  font-family: 'Pacifico', 'Helvetica Neue', Helvetica;
+  color: #330000;
+  font-weight: 400;
+
+}
+
+p {
+    font-family:  "Helvetica Neue", Helvetica, sans-serif;
+    color: #000;
+  }
+
+
+}
+
+
+ .form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input {
+  margin-bottom: 10px;
+}
