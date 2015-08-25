@@ -1,4 +1,5 @@
 class ProjectsController < ApplicationController
+  before_action :authenticate_user!, only: [:new, :edit, :update, :create, :destroy]
   before_action :set_project, only: [:show, :edit, :update, :destroy]
 
   respond_to :html
@@ -21,7 +22,7 @@ class ProjectsController < ApplicationController
   end
 
   def create
-    @project = Project.new(project_params)
+    @project = current_user.projects.new(project_params)
     @project.save
     respond_with(@project)
   end
