@@ -1,0 +1,29 @@
+<div class="row">
+<h1 class="text-center">Dashboard</h1>
+  <div class="col-md-8">
+    <h3 class="text-center">
+      NEW PROJECT <%= link_to "New Project", new_project_path, class: "btn btn-danger"  %>
+    </h3>
+    <table class="table">
+        <thead>
+          <tr>
+            <th>Project Name</th>
+            <th>Duration</th>
+            <th>Budget</th> 
+            <th>Organisation</th> 
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @projects.each do |project| %> 
+          <tr>
+            <th><%= link_to project.name, project_path(project) %></th>
+            <th><%= project.duration %></th>
+            <th><%= project.budget %></th>
+            <th><%= project.organisation %></th>
+            <th><%= link_to "Edit", edit_project_path(project) %></th>
+          </tr>
+        <% end %>
+      </tbody>
+      </table>
+  </div>
