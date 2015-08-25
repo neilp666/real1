@@ -3,14 +3,13 @@
 
 <% else %>
 
-
 <div class="jumbotron">
   <h1><i class="fa fa-tasks fa-1x"></i> Real Experts.</h1>
   <p>Work With the Best Engineers, Architects & Surveyors</p>
+
+<p><%= link_to "View current Projects", projects_path, class: "btn btn-primary btn-lg" %>
   
-<p>
-  <%= link_to "Start Your Project", new_user_registration_path, class: "btn btn-primary btn-large" %>
-        </p>
+<%= link_to "Start Your Project", new_user_registration_path, class: "btn btn-danger btn-lg" %></p>
 </div>
 
 <% end %>

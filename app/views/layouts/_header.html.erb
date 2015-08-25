@@ -19,15 +19,13 @@
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-
-        <% if user_signed_in? %>
-
-        <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
-
-        <li><%= link_to "logout", destroy_user_session_path, method: :delete %></li>
-        <% else %>
-        <li><%= link_to "login", new_user_session_path %></li>
-        <% end %>
+        <li><%= link_to "Projects", projects_path %></li>
+          <% if user_signed_in? %>
+              <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
+              <li><%= link_to "logout", destroy_user_session_path, method: :delete %></li>
+          <% else %>
+              <li><%= link_to "login", new_user_session_path %></li>
+          <% end %>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
