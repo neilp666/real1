@@ -15,6 +15,7 @@ gem 'bootstrap-sass', '~> 3.3.5'
 gem 'font-awesome-rails'
 gem 'simple_form'
 gem 'devise'
+gem 'cancan'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]

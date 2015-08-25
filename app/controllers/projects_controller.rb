@@ -19,6 +19,7 @@ class ProjectsController < ApplicationController
   end
 
   def edit
+    authorize! :manage, @project
   end
 
   def create
@@ -28,11 +29,13 @@ class ProjectsController < ApplicationController
   end
 
   def update
+    authorize! :manage, @project
     @project.update(project_params)
     respond_with(@project)
   end
 
   def destroy
+    authorize! :manage, @project
     @project.destroy
     respond_with(@project)
   end
