@@ -1,15 +1,13 @@
-<%= simple_form_for(@project) do |f| %>
+<%= simple_form_for(@project, html: {class: "form-signin"}) do |f| %>
   <%= f.error_notification %>
 
-  <div class="form-inputs">
-    <%= f.input :name %>
-    <%= f.input :description %>
-    <%= f.input :budget %>
-    <%= f.input :duration %>
-    <%= f.input :organisation %>
-  </div>
-
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
+ 
+    <%= f.input :name, required: true, label: false, placeholder: "Name", input_html: {class: "form-control"} %>
+    <%= f.input :description, required: true, label: false, placeholder: "Project description", input_html: {class: "form-control", row: 7} %>
+    <%= f.input :budget, required: true, label: false, placeholder: "Budget", input_html: {class: "form-control"} %>
+    <%= f.input :duration, required: true, label: false, placeholder: "Budget", input_html: {class: "form-control"} %>
+    <%= f.input :organisation, required: true, label: false, placeholder: "Budget", input_html: {class: "form-control" %>
+  
+    <%= f.button :submit, class: "btn btn-primary btn-block" %>
+  
 <% end %>
