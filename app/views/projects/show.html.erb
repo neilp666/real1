@@ -1,29 +1,21 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+<div class="row">
 
-<p>
-  <strong>Name:</strong>
-  <%= @project.name %>
-</p>
+<div class="col-md-6">
 
-<p>
-  <strong>Description:</strong>
-  <%= @project.description %>
-</p>
+<%= image_tag "zzz.jpg", class: "img-responsive" %>
+</div>
 
-<p>
-  <strong>Budget:</strong>
-  <%= @project.budget %>
-</p>
-
-<p>
-  <strong>Duration:</strong>
-  <%= @project.duration %>
-</p>
-
-<p>
-  <strong>Organisation:</strong>
-  <%= @project.organisation %>
-</p>
+<div class="col-md-6">
+<h3><%= @project.name %></h3>
+<p>Description</p>
+<p><%= @project.description %></p>
+<p>Budget:</p>
+<p><%= @project.budget %></p>
+<p>Duration:</p>
+<p><%= @project.duration %></p>
+<p>Organisation:</p>
+<p><%= @project.organisation %></p>
 
 <%= link_to 'Edit', edit_project_path(@project) %> |
 <%= link_to 'Back', projects_path %>
