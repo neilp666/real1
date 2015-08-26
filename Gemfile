@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+ruby '2.0.0'
 gem 'rails', '4.1.7'
 gem 'sqlite3'
 gem 'sass-rails', '~> 4.0.3'
@@ -16,6 +16,8 @@ gem 'font-awesome-rails'
 gem 'simple_form'
 gem 'devise'
 gem 'cancan'
+gem 'rails_12factor', group: :production
+gem 'pg', group: :production
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
