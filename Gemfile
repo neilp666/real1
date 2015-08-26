@@ -18,6 +18,7 @@ gem 'devise'
 gem 'cancan'
 gem 'rails_12factor', group: :production
 gem 'pg', group: :production
+gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
