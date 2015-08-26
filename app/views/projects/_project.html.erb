@@ -1,12 +1,12 @@
 <div class="col-md-3">
-<div class="thumbnail">
-<%= link_to project_path(project) do %>
-<%= image_tag "real.png", class: "img-responsive" %>
-<% end %>
+  <div class="thumbnail">
+    <%= link_to project_path(project) do %>
+    <%= image_tag "real.png", class: "img-responsive" %>
+   <% end %>
+  
+  <div class="caption">
+  <p><strong><%= link_to project.name , project_path(project) %></strong></p>
+  </div>
+  </div>
+</div>
 
-
-<div class="caption">
-<h3><strong><%= link_to project.name , project_path(project) %></strong></h3>
-</div>
-</div>
-</div>

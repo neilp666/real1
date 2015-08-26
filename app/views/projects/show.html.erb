@@ -1,21 +1,15 @@
-<div class="container">
 <div class="row">
+  <div class="col-md-6">
+   <%= image_tag "real.png", class: "img-responsive" %>
+  </div>
 
 <div class="col-md-6">
-
-<%= image_tag "real.png", class: "img-responsive" %>
+  <h3><%= @project.name %></h3>
+  <p><%= @project.description %></p>
+  <p>Budget: <%= @project.budget %> Duration: <%= @project.duration %></p>
+  <p>Organisation: <%= @project.organisation %></p>
 </div>
-
-<div class="col-md-6">
-<h3><%= @project.name %></h3>
-<p>Description</p>
-<p><%= @project.description %></p>
-<p>Budget:</p>
-<p><%= @project.budget %></p>
-<p>Duration:</p>
-<p><%= @project.duration %></p>
-<p>Organisation:</p>
-<p><%= @project.organisation %></p>
+</div>
 
 <%= link_to 'Edit', edit_project_path(@project) %> |
 <%= link_to 'Back', projects_path %>
