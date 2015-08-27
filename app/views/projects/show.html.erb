@@ -1,7 +1,9 @@
 <div class="container">
 <div class="row">
   <div class="col-md-6">
-   <%= image_tag "real.png", class: "img-responsive" %>
+    <div class="thumbnail">
+      <%= image_tag "real.png", class: "img-responsive" %>
+    </div>
   </div>
 
 <div class="col-md-6">
@@ -13,5 +15,5 @@
 </div>
 </div>
 
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>
+<%= link_to 'Edit', edit_project_path(@project), class: "btn btn-link" %> |
+<%= link_to 'Back', projects_path, class: "btn btn-link" %>
