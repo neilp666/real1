@@ -22,6 +22,7 @@ gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 gem 'dotenv-rails', group: :development
 gem 'aws-sdk'
 
+
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
